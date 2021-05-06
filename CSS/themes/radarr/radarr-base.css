@@ -99,7 +99,7 @@ a:hover {
 /* LOADING PAGE */
 [class*="ErrorPage-page-"],
 [class*="ErrorPage-version-"],
-[class*="LoadingMessage-loadingMessage-358v5"] {
+[class*="LoadingMessage-loadingMessage-"] {
     color: var(--text);
 }
 
@@ -233,6 +233,11 @@ a:hover {
 [class*="MovieIndexPoster-controls-"] {
     background-color: #000 !important;
 }
+[class*="MovieTitlesTableContent-blankpad-"],
+[class*="ExtraFileTableContent-blankpad-"],
+[class*="MovieHistoryTableContent-blankpad-"] {
+    color: var(--text);
+}
 
 /* OVERVIEW PAGE */
 
@@ -323,10 +328,6 @@ a:hover {
     background-color: rgba(0, 0, 0, .25);
 }
 
-.Table-table-2C3O8 {
-    color: #fff;
-}
-
 [class*="Popover-title-"],
 [class*="SeasonInfo-title-"],
 [class*="Popover-body-"],
@@ -347,7 +348,7 @@ a:hover {
 }
 
 [class*="EpisodeTitleLink-link-"]:hover {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -355,14 +356,20 @@ a:hover {
     color: var(--text);
 }
 
+[class*="Label-default-"] [class*="IconButton-button-"]  {
+    color: #eee;
+}
+
 [class*="IconButton-button-"]:hover {
     background-color: transparent;
     color: var(--text-hover);
 }
 
-[class*="Label-default-"] {
+[class*="Label-default-"],
+[class*="Label-inverse-"] {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
+    color: #fff;
 }
 
 [class*="Label-info-"] {
@@ -486,20 +493,24 @@ a:hover {
 }
 
 /* ADD NEW */
-div[class*='EnhancedSelectInputOption'] {
-    background-color: #1e1e1e;
-    color: #fff;
-}
-
-div[class*='EnhancedSelectInputOption']:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
-}
 
 [class*="EnhancedSelectInput-options-"] {
-    border: 1px solid #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-    background-color: #1e1e1e;
+    background: var(--modal-bg-color);
+    color: var(--text);
+}
+[class*="EnhancedSelectInputOption-isSelected-"],
+[class*="EnhancedSelectInputOption-isSelected-"]:hover {
+    background-color: rgba(255, 255, 255, 0.20) !important;
+}
+
+[class*="EnhancedSelectInputOption-option-"]:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+[class*="HintedSelectInputOption-hintText-"] {
+    color: var(--text);
 }
 
 /* SEARCH BAR */
@@ -522,7 +533,7 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 [class*="MovieSearchResult-alternateTitle-"] {
-    color: #ffffff;
+    color: #fff;
     font-size: 12px;
 }
 
@@ -545,7 +556,9 @@ div[class*='EnhancedSelectInputOption']:hover {
 
 /* TEXT COLOR */
 
-[class*="PageContentBody-innerContentBody-"] {
+[class*="PageContentBody-innerContentBody-"],
+[class*="PageContentBody-contentBody-"],
+.react-tabs__tab-panel .react-tabs__tab-panel--selected > div {
     color: var(--text);
 }
 
@@ -733,13 +746,10 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 [class*="CalendarEvent-movieTitle-"],
+[class*="CalendarEvent-movieInfo-"],
 [class*="CalendarEvent-episodeInfo-"],
 [class*="CalendarEvent-airTime-"] {
-    color: #ffffff !important;
-}
-
-[class*="CalendarEvent-movieInfo-"] {
-    color: var(--text);
+    color: #fff !important;
 }
 
 [class*="CalendarEvent-event-"] {
@@ -751,7 +761,7 @@ div[class*='EnhancedSelectInputOption']:hover {
 }
 
 [class*="CalendarEventGroup-movieTitle-"] {
-    color: #ffffff !important;
+    color: #fff !important;
 }
 
 [class*="CalendarEventGroup-airTime-"] {
